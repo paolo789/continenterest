@@ -24,6 +24,7 @@ public class CityController {
 		List<CityBean> cities=tr.findByCountryCode(nazione);
 		return cities;
 	}
+	
 	@GetMapping("/cercacitta")
 	public List<CityBean> cercaCitta(String citta) {
 		List<CityBean> cities=tr.findByNameStartingWith(citta);

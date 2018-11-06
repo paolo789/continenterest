@@ -20,8 +20,6 @@ public class CountryController {
 	@Autowired
 	private CountryRepository cr;
 	
-	@Autowired
-	private CityRepository tr;
 	
 	@GetMapping("/listacontinenti")
 	public List<String> getContinents() {
